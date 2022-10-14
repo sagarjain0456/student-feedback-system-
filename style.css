@@ -1,0 +1,84 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+#div1{
+  height: 400px;
+  width:100vw;
+  background-image: linear-gradient(to right, #c33764, #1d2671);
+ color:white;
+}
+
+#krum-logo1{
+  height:100px;
+  width:100px;
+}
+
+#new-age-heading{
+  font-size: 60px;
+  border:4px solid orange;
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#portal-heading-div{
+  background-color: #4B0082;
+  display: flex;
+  justify-content: center;
+
+}
+
+#portal-heading{
+  color:orange;
+  /* text-align: center; */
+  /* position: relative; */
+}
+
+#portal-heading::after {
+  content: '|';
+  background-color: black;
+  position: absolute;
+  right: 0;
+  width: 65%;
+  animation: typing 2s infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 35%;
+  }
+}
+
+
+#portal-heading2-div{
+  background-color: black;
+  width:23vw;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#portal-heading2{
+  font-size: 30px;
+  color:orange;
+  position: relative;
+}
+
+#portal-heading2::after {
+  content: '|';
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  animation: typing 2s infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
