@@ -32,6 +32,7 @@
 
 #portal-heading{
   color:orange;
+  font-size: 30px;
 }
 
 #portal-heading::after {
@@ -99,7 +100,7 @@
   height:300px;
   width:500px;
   /* border:4px solid orange; */
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   background-image: url("images/students-pic1.jpg");
   background-size: cover;
@@ -127,7 +128,7 @@ background-image: url("images/krmu-building-pic.jpg")
   width:100vw;
   background-color: 	#E6E6FA;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 
@@ -135,4 +136,12 @@ background-image: url("images/krmu-building-pic.jpg")
 @media only screen and (max-width:600px) {
   #slider-div{
     width:350px;
+}
+
+@media only screen and (max-width:400px) {
+#portal-heading{
+  font-size: 24px;
+}
+
+
 }
