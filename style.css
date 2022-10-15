@@ -17,7 +17,6 @@
 
 #new-age-heading{
   font-size: 60px;
-  /* border:4px solid orange; */
   width:40vw;
   margin-left: auto;
   margin-right: auto;
@@ -56,7 +55,6 @@
 }
 }
 
-
 @media only screen and (max-width:740px) {
 #new-age-heading{
   width:65vw;
@@ -64,7 +62,6 @@
   margin-top: 15px;
 }
 }
-
 
 @media only screen and (max-width:1100px){
   #portal-heading::after {
@@ -99,7 +96,6 @@
 #slider-div{
   height:300px;
   width:500px;
-  /* border:4px solid orange; */
   margin-left: auto;
   margin-right: auto;
   background-image: url("images/students-pic1.jpg");
@@ -132,16 +128,52 @@ background-image: url("images/krmu-building-pic.jpg")
   align-items: center;
 }
 
-
 @media only screen and (max-width:600px) {
   #slider-div{
     width:350px;
+}
 }
 
 @media only screen and (max-width:400px) {
 #portal-heading{
   font-size: 24px;
 }
+}
+
+#signup{
+  padding:10px;
+  background-color: green;
+  color:white;
+  border-radius:5px;
+  cursor: pointer;
+  position: absolute;
+  top:10px;
+  right:100px;
+  width:80px;
+}
+
+#signup:hover {
+  background-color: red;
+  color: white;
+}
 
 
+
+
+
+#login{
+  padding:10px;
+  background-color: green;
+  color:white;
+  border-radius:5px;
+  cursor: pointer;
+  position: absolute;
+  top:10px;
+  right:10px;
+  width:80px;
+}
+
+#login:hover {
+  background-color: red;
+  color: white;
 }
