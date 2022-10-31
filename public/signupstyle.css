@@ -1,0 +1,18 @@
+body{
+  background-color: black;
+}
+
+#signup-box-main-div{
+ border:2px solid orange;
+ display: flex;
+ flex-direction:column;
+ height:50
+}
+
+#email-div{
+  display: inline-block;
+}
+
+#pin-div{
+  display: inline-block;
+}

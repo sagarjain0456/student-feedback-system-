@@ -1,0 +1,28 @@
+{
+  "name": "student-feedback",
+  "version": "1.0.0",
+  "description": "https://sagarjain0456.github.io/student-feedback-system-/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarjain0456/student-feedback-system-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagarjain0456/student-feedback-system-/issues"
+  },
+  "homepage": "https://github.com/sagarjain0456/student-feedback-system-#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
