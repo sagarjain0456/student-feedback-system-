@@ -1,18 +1,62 @@
 body{
   background-color: black;
 }
-
-#signup-box-main-div{
- border:2px solid orange;
- display: flex;
- flex-direction:column;
- height:50
+#feedback-img{
+  border:2px solid orange;
 }
-
-#email-div{
-  display: inline-block;
+#feedback-img-inpus-container-whole-container{
+  display: flex;
+  border:2px solid orange;
+  align-items: center;
+  margin-top: 100px;
 }
-
-#pin-div{
-  display: inline-block;
+#inputs-container{
+    border:2px solid orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fname{
+  display: block;
+  width:300px;
+  height: 2vw;
+  border-radius: 5px;
+}
+#lname{
+  display: block;
+  width:30vw;
+  height: 2vw;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#email{
+  display: block;
+  width:30vw;
+  height: 2vw;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#pin{
+  display: block;
+  width:30vw;
+  height: 2vw;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#register-submit-btn{
+  height:2.5vw;
+  width:10vw;
+  background-color: green;
+  color:white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#register-btn-div{
+  text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sign-up-heading{
+  color:white;
+  font-size: 30px;
+  text-align: center;
 }
