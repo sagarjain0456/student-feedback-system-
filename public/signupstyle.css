@@ -3,6 +3,8 @@ body{
 }
 #feedback-img{
   border:2px solid orange;
+  height:400px;
+  width:600px;
 }
 #feedback-img-inpus-container-whole-container{
   display: flex;
@@ -17,34 +19,34 @@ body{
 }
 #fname{
   display: block;
-  width:300px;
-  height: 2vw;
+  width:400px;
+  height: 35px;
   border-radius: 5px;
 }
 #lname{
   display: block;
-  width:30vw;
-  height: 2vw;
+  width:400px;
+  height: 35px;
   border-radius: 5px;
   margin-top: 10px;
 }
 #email{
   display: block;
-  width:30vw;
-  height: 2vw;
+  width:400px;
+  height: 35px;
   border-radius: 5px;
   margin-top: 10px;
 }
 #pin{
   display: block;
-  width:30vw;
-  height: 2vw;
+  width:400px;
+  height: 35px;
   border-radius: 5px;
   margin-top: 10px;
 }
 #register-submit-btn{
-  height:2.5vw;
-  width:10vw;
+  height:45px;
+  width: 100px;
   background-color: green;
   color:white;
   border-radius: 10px;
@@ -59,4 +61,58 @@ body{
   color:white;
   font-size: 30px;
   text-align: center;
+}
+
+
+
+/* first media query */
+@media only screen and (max-width: 1080px) {
+  #feedback-img{
+    border:2px solid orange;
+    height:300px;
+    width:500px;
+  }
+}
+
+
+@media only screen and (max-width: 980px) {
+  #feedback-img-inpus-container-whole-container{
+  flex-direction: column;
+    margin-top: 0px;
+  }
+
+  #feedback-img{
+    border:2px solid orange;
+    height:50vh;
+    width:96vw;
+  }
+
+  #inputs-container{
+  margin-top: 50px;
+  width: 97vw;
+  height:40vh;
+  }
+
+  #fname{
+    width:96vw;
+    height:40px;
+  }
+
+  #lname{
+    width:96vw;
+    height:40px;
+  }
+
+  #email{
+    width:96vw;
+    height:40px;
+  }
+  #pin{
+    width:96vw;
+    height:40px;
+  }
+
+
+
+
 }
