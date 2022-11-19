@@ -1,0 +1,97 @@
+body{
+  background-color: black;
+}
+#feedback-img{
+  border:2px solid orange;
+  height:400px;
+  width:600px;
+}
+#feedback-img-inpus-container-whole-container{
+  display: flex;
+  border:2px solid orange;
+  align-items: center;
+  margin-top: 100px;
+}
+#inputs-container{
+    border:2px solid orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email{
+  display: block;
+  width:400px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#pin{
+  display: block;
+  width:400px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#register-submit-btn{
+  height:45px;
+  width: 100px;
+  background-color: green;
+  color:white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#register-btn-div{
+  text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sign-up-heading{
+  color:white;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+/* first media query */
+@media only screen and (max-width: 1080px) {
+  #feedback-img{
+    border:2px solid orange;
+    height:300px;
+    width:500px;
+  }
+}
+
+
+@media only screen and (max-width: 980px) {
+  #feedback-img-inpus-container-whole-container{
+  flex-direction: column;
+    margin-top: 0px;
+  }
+
+  #feedback-img{
+    border:2px solid orange;
+    height:50vh;
+    width:96vw;
+  }
+
+  #inputs-container{
+  margin-top: 50px;
+  width: 97vw;
+  height:40vh;
+  }
+
+
+  #email{
+    width:96vw;
+    height:40px;
+  }
+  #pin{
+    width:96vw;
+    height:40px;
+  }
+
+
+
+
+}

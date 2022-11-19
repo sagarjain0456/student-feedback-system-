@@ -21,6 +21,9 @@ app.get("/signup.html", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
+app.get("/login.html", function(req, res) {
+  res.sendFile(__dirname + "/login.html");
+});
 
 
 
