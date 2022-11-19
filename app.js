@@ -1,8 +1,11 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const db =process.env.DATABASE;
 
-
+mongoose.connect(db);
+// console.log(process.env);
 const app = express();
 
 app.use(express.static("public"));
@@ -21,6 +24,6 @@ app.get("/signup.html", function(req, res) {
 
 
 
-app.listen(process.env.PORT || 4000, function() {
+app.listen(4000, function() {
 console.log("Server started on port 4000");
 });
