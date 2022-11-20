@@ -8,6 +8,7 @@ body{
 }
 #feedback-img-inpus-container-whole-container{
   display: flex;
+  justify-content: space-around;
   border:2px solid orange;
   align-items: center;
   margin-top: 100px;
@@ -83,12 +84,18 @@ body{
 
 
   #email{
-    width:96vw;
+    width:85vw;
     height:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   #pin{
-    width:96vw;
+    width:85vw;
     height:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 

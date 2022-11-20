@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title> Welcome to the Login page!!</title>
-    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="loginstyle.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
 <div id="feedback-img-inpus-container-whole-container">
   <img id="feedback-img" src="images/newfeed1.png" alt="feed1">
-  <div id="inputs-container">
+<form  action="login.html" method="post">
+    <div id="inputs-container">
     <h1 id="sign-up-heading">LOGIN</h1>
-    <input id="email" type="text" placeholder="Enter Email">
-    <input id="pin" type="text" placeholder="Enter Password">
+    <input id="email" type="text" placeholder="Enter Email" name= "email">
+    <input id="pin" type="text" placeholder="Enter Password" name= "password">
     <div id="register-btn-div">
-    <button id="register-submit-btn">SUBMIT</button>
+    <button id="register-submit-btn" type="submit" name="button">SUBMIT</button>
     </div>
   </div>
+</form>
 </div>
 
 

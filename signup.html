@@ -4,22 +4,30 @@
   <meta charset="utf-8">
   <title> Welcome to the signup page!!</title>
     <link rel="stylesheet" href="signupstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
 <div id="feedback-img-inpus-container-whole-container">
   <img id="feedback-img" src="images/newfeed1.png" alt="feed1">
+
+  <form  action="signup.html" method="post">
   <div id="inputs-container">
     <h1 id="sign-up-heading">Sign Up</h1>
-    <input id="fname" type="text" placeholder="Enter First Name">
-    <input id="lname" type="text" placeholder="Enter Last Name">
-    <input id="email" type="text" placeholder="Enter Email">
-    <input id="pin" type="text" placeholder="Enter Password">
+    <input id="firstname" type="text" placeholder="Enter First Name" name="firstname">
+    <input id="lastname" type="text" placeholder="Enter Last Name" name="lastname">
+    <input id="email" type="text" placeholder="Enter Email" name= "email">
+    <input id="password" type="text" placeholder="Enter Password" name="password">
     <div id="register-btn-div">
-    <button id="register-submit-btn">SUBMIT</button>
+    <button id="register-submit-btn" type="submit" name="button">SUBMIT</button>
     </div>
   </div>
+  </form>
+
+
+
+
 </div>
 
 

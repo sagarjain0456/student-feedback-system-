@@ -8,6 +8,7 @@ body{
 }
 #feedback-img-inpus-container-whole-container{
   display: flex;
+  justify-content: space-around;
   border:2px solid orange;
   align-items: center;
   margin-top: 100px;
@@ -17,13 +18,13 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-#fname{
+#firstname{
   display: block;
   width:400px;
   height: 35px;
   border-radius: 5px;
 }
-#lname{
+#lastname{
   display: block;
   width:400px;
   height: 35px;
@@ -37,7 +38,7 @@ body{
   border-radius: 5px;
   margin-top: 10px;
 }
-#pin{
+#password{
   display: block;
   width:400px;
   height: 35px;
@@ -90,29 +91,38 @@ body{
   #inputs-container{
   margin-top: 50px;
   width: 97vw;
-  height:40vh;
+  height:50vh;
   }
 
-  #fname{
-    width:96vw;
+  #firstname{
+    width:85vw;
     height:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #lname{
-    width:96vw;
+  #lastname{
+    width:85vw;
     height:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #email{
-    width:96vw;
+    width:85vw;
     height:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-  #pin{
-    width:96vw;
+  #password{
+    width:85vw;
     height:40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-
-
 
 }
