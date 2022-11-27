@@ -33,6 +33,13 @@ body{
   border-radius: 5px;
   margin-top: 10px;
 }
+#teacher-code{
+  display: block;
+  width:400px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 #register-submit-btn{
   height:45px;
   width: 100px;

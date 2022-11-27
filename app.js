@@ -61,7 +61,7 @@ app.post("/signup.html", function(req,res){
     }
 
     else{
-      res.sendFile( __dirname + "/aftersignup.html");
+      res.sendFile( __dirname + "/login.html");
     }
 
   });
@@ -73,6 +73,7 @@ app.post("/signup.html", function(req,res){
  app.post("/login.html", function(req,res){
  const username = req.body.email;
  const password = req.body.password;
+ const teachercode = req.body.teachercode;
  //User is the name of the collection
  User.findOne({email: username}, function(err, foundUser){
    if(err){
@@ -81,7 +82,7 @@ app.post("/signup.html", function(req,res){
 
    else{
      if(foundUser){
-       if(foundUser.password === password){
+       if(foundUser.password === password & teachercode ===process.env.TEACHERCODE){
          res.sendFile(__dirname + "/aftersignup.html");
        }
      }
