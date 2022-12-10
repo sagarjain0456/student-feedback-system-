@@ -11,9 +11,7 @@ mongoose.connect(db);
 const app = express();
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
@@ -36,12 +34,19 @@ password: String
 });
 
 
+const remarksGradeSchema = new mongoose.Schema ({
+remarks:String,
+grade: String
+});
+
+
+
 const secret =process.env.SECRET;
 userSchema.plugin(encrypt, { secret: secret, encryptedFields: ["password"] });
 
 const User = new mongoose.model("student-feedback-portal-collection", userSchema);
 
-
+const remarksGrade = new mongoose.model("remark-grade-collection", remarksGradeSchema);
 
 // Starting of the Handling of post request for signup.html route
 
@@ -52,8 +57,6 @@ app.post("/signup.html", function(req,res){
    firstname: req.body.firstname,
    lastname: req.body.lastname
  });
-
-
 
  newUser.save(function(err){
     if(err){
@@ -68,6 +71,29 @@ app.post("/signup.html", function(req,res){
  })
  // End of handling of the post request for signup.html route
 
+
+
+// Starting of the Handling of post request for aftersignup.html route
+ app.post("/aftersignup.html", function(req,res){
+    console.log(req.body.remarksrollone);
+    console.log(req.body.graderollone);
+
+  const newremarksGrade = new remarksGrade({
+    remarksRoll1: req.body.remarksrollone,
+    gradeRoll1: req.body.remarksrollone
+  });
+
+  newremarksGrade.save(function(err){
+     if(err){
+       console.log(err);
+     }
+
+     else{
+       res.sendFile( __dirname + "/remarkgradeupdated.html");
+     }
+
+   });
+  })
 
 
  app.post("/login.html", function(req,res){

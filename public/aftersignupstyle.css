@@ -1,0 +1,35 @@
+#student1pic{
+  height:100px;
+  width:100px;
+}
+
+#student1{
+  display: flex;
+  border: 2px solid orange;
+}
+
+#student1-name{
+  font-size: 15px;
+}
+
+#student1-roll{
+  font-size: 15px;
+}
+
+#remarks{
+resize:horizontal;
+width:300px;
+height:60px;
+border-radius: 5px;
+display: block;
+}
+
+#grade{
+  margin-top: 10px;
+}
+
+#student1-btn{
+  display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
